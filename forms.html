@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ICT 2102 Web Development Week 4 - Forms and Multimedia continuation">
+    <title>ICT 2102 | Week 4 - Forms and Multimedia</title>
+</head>
+
+<body>
+
+<header>
+    <h1>ICT 2102: Web Development</h1>
+    <h2>Week 4: Forms and Multimedia</h2>
+    <p>Continuing the website developed in Weeks 2 and 3</p>
+</header>
+
+<nav>
+    <a href="#registration">Registration</a> |
+    <a href="#feedback">Feedback</a> |
+    <a href="#multimedia">Multimedia</a> |
+    <a href="#examples">Form Examples</a>
+</nav>
+
+<main>
+
+<section id="registration">
+    <h2>Student Registration</h2>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <p>
+                <label for="full-name">Full Name:</label><br>
+                <input type="text" id="full-name" name="full-name" required>
+            </p>
+
+            <p>
+                <label for="registration-number">Registration Number:</label><br>
+                <input type="text" id="registration-number" name="registration-number" required>
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Telephone Number:</label><br>
+                <input type="tel" id="phone" name="phone">
+            </p>
+
+            <p>
+                <label for="date-of-birth">Date of Birth:</label><br>
+                <input type="date" id="date-of-birth" name="date-of-birth">
+            </p>
+
+            <p>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="16" max="100" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Programme and Study Information</legend>
+
+            <p>
+                <label for="programme">Programme:</label><br>
+                <select id="programme" name="programme" required>
+                    <option value="">-- Select Programme --</option>
+                    <option value="ict">ICT</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="education">Education</option>
+                </select>
+            </p>
+
+            <p>Study Mode:</p>
+            <input type="radio" id="day" name="study-mode" value="day" required>
+            <label for="day">Day</label>
+
+            <input type="radio" id="evening" name="study-mode" value="evening">
+            <label for="evening">Evening</label>
+
+            <input type="radio" id="weekend" name="study-mode" value="weekend">
+            <label for="weekend">Weekend</label>
+
+            <p>Areas of Interest:</p>
+            <input type="checkbox" id="web-development" name="interest" value="web-development">
+            <label for="web-development">Web Development</label><br>
+
+            <input type="checkbox" id="database" name="interest" value="database">
+            <label for="database">Database Systems</label><br>
+
+            <input type="checkbox" id="artificial-intelligence" name="interest" value="artificial-intelligence">
+            <label for="artificial-intelligence">Artificial Intelligence</label><br>
+
+            <input type="checkbox" id="data-science" name="interest" value="data-science">
+            <label for="data-science">Data Science</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <p>
+                <label for="password">Create Password:</label><br>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <p>
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" rows="6" cols="50"
+                          placeholder="Enter any additional information here..."></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Register Student</button>
+            <button type="reset">Clear Form</button>
+        </p>
+
+    </form>
+</section>
+
+<hr>
+
+<section id="feedback">
+    <h2>Website Feedback Form</h2>
+
+    <form action="#" method="post">
+        <p>
+            <label for="visitor-name">Name:</label><br>
+            <input type="text" id="visitor-name" name="visitor-name" required>
+        </p>
+
+        <p>
+            <label for="visitor-email">Email:</label><br>
+            <input type="email" id="visitor-email" name="visitor-email" required>
+        </p>
+
+        <p>
+            <label for="rating">Rate the Website:</label><br>
+            <select id="rating" name="rating" required>
+                <option value="">-- Select Rating --</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+        </p>
+
+        <p>Would you recommend this website?</p>
+        <input type="radio" id="recommend-yes" name="recommend" value="yes" required>
+        <label for="recommend-yes">Yes</label>
+
+        <input type="radio" id="recommend-no" name="recommend" value="no">
+        <label for="recommend-no">No</label>
+
+        <p>
+            <label for="feedback-message">Your Feedback:</label><br>
+            <textarea id="feedback-message" name="feedback-message" rows="5" cols="50" required></textarea>
+        </p>
+
+        <button type="submit">Send Feedback</button>
+        <button type="reset">Clear</button>
+    </form>
+</section>
+
+<hr>
+
+<section id="multimedia">
+    <h2>Educational Multimedia</h2>
+
+    <h3>Audio Lesson</h3>
+    <p>Listen to the introductory lesson about web development.</p>
+
+    <audio controls>
+        <source src="audio/WhatsApp_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video Lesson</h3>
+    <p>Watch a short demonstration related to the website project.</p>
+
+    <video controls width="600">
+        <source src="videos/lesson.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <h3>Multimedia Description</h3>
+    <p>
+        The audio and video above form part of the educational content of the website.
+        The controls allow users to start, pause and control playback rather than
+        forcing media to play automatically.
+    </p>
+</section>
+
+<hr>
+
+<section id="examples">
+    <h2>Examples of Week 4 Form Controls</h2>
+
+    <h3>Text Input</h3>
+    <input type="text" id="example-text" name="example-text" placeholder="Enter your name">
+
+    <h3>Email Input</h3>
+    <input type="email" id="example-email" name="example-email" placeholder="name@example.com">
+
+    <h3>Telephone Input</h3>
+    <input type="tel" id="example-tel" name="example-tel" placeholder="0700 000 000">
+
+    <h3>Number Input</h3>
+    <input type="number" id="example-number" name="example-number" min="1" max="100">
+
+    <h3>Date Input</h3>
+    <input type="date" id="example-date" name="example-date">
+
+    <h3>Password Input</h3>
+    <input type="password" id="example-password" name="example-password" minlength="8">
+
+    <h3>Radio Buttons</h3>
+    <input type="radio" id="example-male" name="gender" value="male">
+    <label for="example-male">Male</label>
+
+    <input type="radio" id="example-female" name="gender" value="female">
+    <label for="example-female">Female</label>
+
+    <h3>Checkboxes</h3>
+    <input type="checkbox" id="example-html" name="skill" value="html">
+    <label for="example-html">HTML</label>
+
+    <input type="checkbox" id="example-css" name="skill" value="css">
+    <label for="example-css">CSS</label>
+
+    <input type="checkbox" id="example-javascript" name="skill" value="javascript">
+    <label for="example-javascript">JavaScript</label>
+
+    <h3>Selection List</h3>
+    <label for="example-course">Course:</label>
+    <select id="example-course" name="example-course">
+        <option value="">-- Select Course --</option>
+        <option value="web-development">Web Development</option>
+        <option value="data-mining">Data Mining</option>
+        <option value="artificial-intelligence">Artificial Intelligence</option>
+    </select>
+
+    <h3>Textarea</h3>
+    <label for="example-textarea">Message:</label><br>
+    <textarea id="example-textarea" name="example-textarea" rows="4" cols="50"></textarea>
+
+    <h3>Buttons</h3>
+    <button type="button">Normal Button</button>
+    <button type="submit">Submit Button</button>
+    <button type="reset">Reset Button</button>
+</section>
+
+<hr>
+
+<section id="validation-demo">
+    <h2>HTML Validation Demonstration</h2>
+
+    <form action="#" method="post">
+        <p>
+            <label for="required-name">Required Name:</label><br>
+            <input type="text" id="required-name" name="required-name" required>
+        </p>
+
+        <p>
+            <label for="validated-email">Valid Email:</label><br>
+            <input type="email" id="validated-email" name="validated-email" required>
+        </p>
+
+        <p>
+            <label for="validated-age">Age (16–100):</label><br>
+            <input type="number" id="validated-age" name="validated-age" min="16" max="100" required>
+        </p>
+
+        <p>
+            <label for="validated-password">Password (minimum 8 characters):</label><br>
+            <input type="password" id="validated-password" name="validated-password" minlength="8" required>
+        </p>
+
+        <button type="submit">Test Validation</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <hr>
+    <p><strong>ICT 2102: Web Development | Week 4</strong></p>
+    <p>Forms and Multimedia — continuation of the existing website.</p>
+</footer>
+
+</body>
+</html>

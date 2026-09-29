@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="description" content="ICT 2102 Web Development Week 3 practical learning package"> -->
+    <title>ICT 2102 - Week 3 Full Practical Package</title>
+</head>
+
+<body>
+
+<header>
+    <h1>ICT 2102: Web Development</h1>
+    <h2>Week 3 Full Practical Package</h2>
+    <p><strong>Topic:</strong> HTML Lists, Hyperlinks, Images and Tables</p>
+    <p><em>Building on the Week 2 HTML Fundamentals Project</em></p>
+</header>
+
+<nav>
+    <h2>Week 3 Contents</h2>
+    <ul>
+        <li><a href="#purpose">Purpose</a></li>
+        <li><a href="#outcomes">Learning Outcomes</a></li>
+        <li><a href="#setup">Practical Setup</a></li>
+        <li>
+            Core HTML Skills
+            <ul>
+                <li><a href="#unordered">Unordered Lists</a></li>
+                <li><a href="#ordered">Ordered Lists</a></li>
+                <li><a href="#nested">Nested Lists</a></li>
+                <li><a href="#links">Hyperlinks</a></li>
+                <li><a href="#images">Images and Alt Text</a></li>
+                <li><a href="#tables">HTML Tables</a></li>
+            </ul>
+        </li>
+        <li><a href="#integration">Combining the Skills</a></li>
+        <li><a href="#challenge">Common Practical Challenge</a></li>
+        <li><a href="#testing">Browser Testing</a></li>
+        <li><a href="#github">GitHub Workflow</a></li>
+        <li><a href="#evidence">Expected Evidence</a></li>
+        <li><a href="#sequence">Teaching Sequence</a></li>
+        <li><a href="#assignment-prep">Preparation for Group Assignment</a></li>
+        <li><a href="#checklist">Completion Checklist</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="purpose">
+    <h2>1. Purpose of the Week 3 Practical</h2>
+
+    <p>
+        Week 3 extends the HTML webpage created in Week 2. Students move from basic
+        document structure and text organisation to adding richer and more useful
+        content: lists, hyperlinks, images, alternative text and tables.
+    </p>
+
+    <p>
+        The emphasis is on understanding what each HTML element is used for and
+        applying it appropriately in a real webpage.
+    </p>
+
+    <p>
+        Students should continue using the same GitHub repository from Week 2.
+        The existing webpage should be upgraded rather than replaced by an
+        unrelated project.
+    </p>
+</section>
+
+<section id="outcomes">
+    <h2>2. Week 3 Learning Outcomes</h2>
+
+    <p>By the end of the practical work, students should be able to:</p>
+
+    <ol>
+        <li>Create unordered lists.</li>
+        <li>Create ordered lists.</li>
+        <li>Create nested lists.</li>
+        <li>Create and test hyperlinks.</li>
+        <li>Create external links.</li>
+        <li>Create links to other pages.</li>
+        <li>Create email links.</li>
+        <li>Open a link in a new browser tab.</li>
+        <li>Insert images into an HTML webpage.</li>
+        <li>Use the <code>src</code> attribute correctly.</li>
+        <li>Use meaningful alternative text with the <code>alt</code> attribute.</li>
+        <li>Organise local images in an <code>images</code> folder.</li>
+        <li>Create basic HTML tables.</li>
+        <li>Use <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code>.</li>
+        <li>Combine lists, links, images and tables in one webpage.</li>
+        <li>Test the webpage in a browser.</li>
+        <li>Commit and push the completed work to GitHub.</li>
+    </ol>
+</section>
+
+<section id="setup">
+    <h2>3. Practical Setup</h2>
+
+    <p>Students should begin with the Week 2 repository.</p>
+
+    <h3>Update the local repository</h3>
+    <pre><code>git pull</code></pre>
+
+    <h3>Recommended project structure</h3>
+    <pre><code>ICT2102-Group-Project/
+├── index.html
+└── images/
+    ├── image1.jpg
+    ├── image2.jpg
+    └── image3.jpg</code></pre>
+
+    <p>
+        Students should keep the project organised as they add new content.
+        Local images should be placed inside the <code>images</code> folder.
+    </p>
+</section>
+
+<section id="unordered">
+    <h2>4. Practical Topic 1 : Unordered Lists</h2>
+
+    <p>
+        An unordered list is used when the order of items is not important.
+        The <code>&lt;ul&gt;</code> element creates the list and
+        <code>&lt;li&gt;</code> creates each list item.
+    </p>
+
+    <h3>Basic example</h3>
+    <pre><code>&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <h3>Example for an education webpage</h3>
+    <pre><code>&lt;h2&gt;Our Programmes&lt;/h2&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Computer Science&lt;/li&gt;
+    &lt;li&gt;Information Systems&lt;/li&gt;
+    &lt;li&gt;Education&lt;/li&gt;
+    &lt;li&gt;Business Administration&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <h3>Student practice</h3>
+    <ul>
+        <li>Add at least one meaningful unordered list.</li>
+        <li>Use information appropriate to the group's scenario.</li>
+        <li>Use lists to improve the organisation of information.</li>
+    </ul>
+</section>
+
+<section id="ordered">
+    <h2>5. Practical Topic 2 : Ordered Lists</h2>
+
+    <p>
+        An ordered list is appropriate when the sequence of items matters.
+        It is created using <code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code>.
+    </p>
+
+    <h3>Example</h3>
+    <pre><code>&lt;ol&gt;
+    &lt;li&gt;Choose a programme&lt;/li&gt;
+    &lt;li&gt;Complete the application form&lt;/li&gt;
+    &lt;li&gt;Submit the required documents&lt;/li&gt;
+    &lt;li&gt;Receive confirmation&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+    <h3>Suggested processes</h3>
+    <ul>
+        <li><strong>Education:</strong> applying or joining a programme.</li>
+        <li><strong>Beauty Salon:</strong> booking a service.</li>
+        <li><strong>Restaurant:</strong> placing an order.</li>
+        <li><strong>Library:</strong> borrowing a book.</li>
+    </ul>
+</section>
+
+<section id="nested">
+    <h2>6. Practical Topic 3 : Nested Lists</h2>
+
+    <p>
+        A nested list is a list placed inside another list. Nested lists are
+        useful when information has categories and subcategories.
+    </p>
+
+    <h3>Example</h3>
+    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Computing
+        &lt;ul&gt;
+            &lt;li&gt;Computer Science&lt;/li&gt;
+            &lt;li&gt;Information Systems&lt;/li&gt;
+            &lt;li&gt;Software Engineering&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+
+    &lt;li&gt;Business
+        &lt;ul&gt;
+            &lt;li&gt;Accounting&lt;/li&gt;
+            &lt;li&gt;Marketing&lt;/li&gt;
+            &lt;li&gt;Finance&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <h3>Student practice</h3>
+    <p>Create at least one nested list that is meaningful to your group's scenario.</p>
+
+    <h4>Example concept for a library</h4>
+    <ul>
+        <li>Books
+            <ul>
+                <li>Textbooks</li>
+                <li>Reference Books</li>
+            </ul>
+        </li>
+        <li>Journals
+            <ul>
+                <li>Academic Journals</li>
+                <li>Research Journals</li>
+            </ul>
+        </li>
+        <li>Digital Resources
+            <ul>
+                <li>E-books</li>
+                <li>Online Databases</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="links">
+    <h2>7. Practical Topic 4: Hyperlinks</h2>
+
+    <p>
+        Hyperlinks allow users to move from one webpage or resource to another.
+        The <code>&lt;a&gt;</code> element uses the <code>href</code> attribute
+        to specify the destination.
+    </p>
+
+    <h3>7.1 External link</h3>
+    <pre><code>&lt;a href="https://www.example.com"&gt;Visit Website&lt;/a&gt;</code></pre>
+
+    <h3>7.2 Open a link in a new tab</h3>
+    <pre><code>&lt;a href="https://www.example.com" target="_blank"&gt;
+    Visit Website
+&lt;/a&gt;</code></pre>
+
+    <p>
+        Students should understand that <code>target="_blank"</code> instructs
+        the browser to open the destination in a new tab or window, depending
+        on browser behaviour.
+    </p>
+
+    <h3>7.3 Email link</h3>
+    <pre><code>&lt;a href="mailto:info@example.com"&gt;
+    Email Us
+&lt;/a&gt;</code></pre>
+
+    <h3>7.4 Link to another page</h3>
+    <pre><code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code></pre>
+
+    <p>
+        This introduces the idea of a multi-page website. The linked file must
+        exist at the specified location.
+    </p>
+
+    <h3>Student practice</h3>
+    <ul>
+        <li>Create and test at least two external hyperlinks.</li>
+        <li>Practise an email link or a link to another page.</li>
+        <li>Check every link before committing the work.</li>
+    </ul>
+</section>
+
+<section id="images">
+    <h2>8. Practical Topic 5 : Images and Alternative Text</h2>
+
+    <p>
+        Images make webpages more informative and visually meaningful.
+        The <code>&lt;img&gt;</code> element is used to place an image on a webpage.
+    </p>
+
+    <h3>Basic image example</h3>
+    <pre><code>&lt;img src="images/campus.jpg"
+     alt="Students walking around the university campus"&gt;</code></pre>
+
+    <h3>Important attributes</h3>
+    <ul>
+        <li><strong>src:</strong> identifies the image location or source.</li>
+        <li><strong>alt:</strong> provides alternative text describing the relevant image content or purpose.</li>
+    </ul>
+
+    <h3>8.1 Organising images</h3>
+    <pre><code>project/
+├── index.html
+└── images/
+    ├── campus.jpg
+    ├── students.jpg
+    └── library.jpg</code></pre>
+
+    <h3>8.2 Referencing a local image</h3>
+    <pre><code>&lt;img src="images/students.jpg"
+     alt="Students working together in a computer laboratory"&gt;</code></pre>
+
+    <h3>8.3 Meaningful alternative text</h3>
+    <p>Compare:</p>
+    <pre><code>&lt;img src="images/salon.jpg"&gt;</code></pre>
+
+    <p>with:</p>
+    <pre><code>&lt;img src="images/salon.jpg"
+     alt="Beauty salon interior with styling chairs"&gt;</code></pre>
+
+    <p>
+        Students should avoid vague alternative text such as
+        <em>"image"</em> or <em>"photo"</em>.
+    </p>
+
+    <h3>Student practice</h3>
+    <ul>
+        <li>Add at least two relevant images.</li>
+        <li>Store local images in the <code>images</code> folder.</li>
+        <li>Give every image meaningful alternative text.</li>
+        <li>Check that the image path is correct.</li>
+    </ul>
+</section>
+
+<section id="tables">
+    <h2>9. Practical Topic 6 : HTML Tables</h2>
+
+    <p>
+        Tables organise information into rows and columns.
+        Students should understand the purpose of
+        <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>,
+        <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code>.
+    </p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Creates the table.</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Creates a table row.</td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Creates a heading cell.</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Creates a data cell.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Basic table example</h3>
+    <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Item&lt;/th&gt;
+        &lt;th&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;Hair Styling&lt;/td&gt;
+        &lt;td&gt;30,000 UGX&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;Manicure&lt;/td&gt;
+        &lt;td&gt;20,000 UGX&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+    <h3>Suggested table focus by group</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Group</th>
+                <th>Suggested Table</th>
+                <th>Suggested Columns</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Education</td>
+                <td>Programme catalogue</td>
+                <td>Programme, Duration, Award</td>
+            </tr>
+            <tr>
+                <td>Beauty Salon</td>
+                <td>Services and prices</td>
+                <td>Service, Description, Price</td>
+            </tr>
+            <tr>
+                <td>Restaurant</td>
+                <td>Menu</td>
+                <td>Food, Category, Price</td>
+            </tr>
+            <tr>
+                <td>Library</td>
+                <td>Resources</td>
+                <td>Resource, Category, Availability</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="integration">
+    <h2>10. Combining the Week 3 Skills</h2>
+
+    <p>
+        After practising the individual elements, students should combine them
+        in the existing Week 2 webpage. The aim is to demonstrate that they can
+        use HTML elements to organise useful information for real users.
+    </p>
+
+    <pre><code>HEADER
+│
+├── Website name
+│
+MAIN
+│
+├── Introduction
+├── Unordered list
+├── Ordered list
+├── Nested list
+├── Hyperlinks
+├── Images
+└── Table
+│
+FOOTER</code></pre>
+
+    <p>
+        Students should focus on purposeful organisation rather than simply
+        inserting HTML tags to satisfy a checklist.
+    </p>
+</section>
+
+<section id="challenge">
+    <h2>11. Common Week 3 Practical Challenge</h2>
+
+    <p>
+        <strong>Challenge:</strong> Upgrade your Week 2 webpage so that it contains
+        at least one unordered list, one ordered list, one nested list, two
+        hyperlinks, two images with meaningful alternative text, and one relevant table.
+    </p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Requirement</th>
+                <th>Minimum</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Unordered list</td><td>1</td></tr>
+            <tr><td>Ordered list</td><td>1</td></tr>
+            <tr><td>Nested list</td><td>1</td></tr>
+            <tr><td>External hyperlinks</td><td>2</td></tr>
+            <tr><td>Images</td><td>2</td></tr>
+            <tr><td>Meaningful alt text</td><td>2</td></tr>
+            <tr><td>HTML table</td><td>1</td></tr>
+            <tr><td>Table rows</td><td>At least 4</td></tr>
+            <tr><td>GitHub commit</td><td>1 meaningful commit</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="testing">
+    <h2>12. Browser Testing</h2>
+
+    <p>Before committing the work, students should check:</p>
+
+    <ul>
+        <li>All lists display correctly.</li>
+        <li>Nested list items appear under the correct parent item.</li>
+        <li>Hyperlinks open the intended destination.</li>
+        <li>Images display correctly.</li>
+        <li>Image paths are correct.</li>
+        <li>Meaningful alternative text is provided for images.</li>
+        <li>The table has clear headings and correctly organised rows and cells.</li>
+        <li>There are no obvious HTML syntax errors.</li>
+        <li>The page remains readable and logically organised.</li>
+    </ul>
+</section>
+
+<section id="github">
+    <h2>13. GitHub Workflow</h2>
+
+    <p>After testing, save the work to the group's GitHub repository.</p>
+
+    <pre><code>git status
+git add .
+git commit -m "Add lists links images and tables"
+git push</code></pre>
+
+    <p>
+        Students should open the GitHub repository and verify that the latest
+        files and changes are present.
+    </p>
+
+    <h3>Suggested commit message</h3>
+    <p><code>Complete Week 3 HTML content enhancements</code></p>
+</section>
+
+<section id="evidence">
+    <h2>14. Expected Evidence of Learning</h2>
+
+    <ul>
+        <li>A working <code>index.html</code> updated from Week 2.</li>
+        <li>Correct unordered, ordered and nested lists.</li>
+        <li>Working hyperlinks.</li>
+        <li>At least two images with meaningful alternative text.</li>
+        <li>A meaningful HTML table.</li>
+        <li>Logical organisation of webpage content.</li>
+        <li>Successful browser testing.</li>
+        <li>A GitHub commit showing the Week 3 work.</li>
+    </ul>
+</section>
+
+<section id="sequence">
+    <h2>15. Suggested Teaching Sequence</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Stage</th>
+                <th>Focus</th>
+                <th>Student Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Recap Week 2</td>
+                <td>Open and review the Week 2 webpage.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lists</td>
+                <td>Code unordered, ordered and nested lists.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hyperlinks</td>
+                <td>Create and test different types of links.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Images</td>
+                <td>Add local images and meaningful alt text.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Tables</td>
+                <td>Create a relevant table.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Integration</td>
+                <td>Combine all elements in the webpage.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Testing</td>
+                <td>Check the webpage in a browser.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>GitHub</td>
+                <td>Commit and push the completed work.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="assignment-prep">
+    <h2>16. Preparation for the Group Assignment</h2>
+
+    <p>
+        After students complete this intensive guide, the formal group assignment
+        will use the same four groups and apply the skills to different real-world
+        scenarios.
+    </p>
+
+    <ol>
+        <li><strong>Group 1 : Education</strong></li>
+        <li><strong>Group 2 : Beauty Salon</strong></li>
+        <li><strong>Group 3 : Restaurant</strong></li>
+        <li><strong>Group 4 : Library</strong></li>
+    </ol>
+
+    <p>
+        The later group assignment should require purposeful choices about what
+        information to present, how to organise it, which links and images are
+        appropriate, and how a table can help users understand the information.
+    </p>
+
+    <p>
+        <strong>Important:</strong> The group-specific assignment should be completed
+        after students have worked through this common practical guide.
+    </p>
+</section>
+
+<section id="checklist">
+    <h2>17. Week 3 Completion Checklist</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Check</th>
+                <th>Task</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>☐</td><td>Week 2 repository updated with git pull</td></tr>
+            <tr><td>☐</td><td>Unordered list created</td></tr>
+            <tr><td>☐</td><td>Ordered list created</td></tr>
+            <tr><td>☐</td><td>Nested list created</td></tr>
+            <tr><td>☐</td><td>External hyperlinks created and tested</td></tr>
+            <tr><td>☐</td><td>Email or page link practised</td></tr>
+            <tr><td>☐</td><td>At least two images added</td></tr>
+            <tr><td>☐</td><td>Images organised in an images folder</td></tr>
+            <tr><td>☐</td><td>Meaningful alt text added</td></tr>
+            <tr><td>☐</td><td>HTML table created</td></tr>
+            <tr><td>☐</td><td>All content tested in a browser</td></tr>
+            <tr><td>☐</td><td>Changes committed to GitHub</td></tr>
+            <tr><td>☐</td><td>Changes pushed to GitHub</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Week 3 Key Message</h2>
+    <p>
+        <strong>Do not just add HTML tags. Use HTML to organise meaningful information
+        for real users.</strong>
+    </p>
+    <p>
+        Week 3 is about transforming the basic Week 2 webpage into a richer,
+        more useful webpage using lists, hyperlinks, images and tables.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <hr>
+    <p><strong>ICT 2102: Web Development : Week 3 Practical Package</strong></p>
+    <p>Continue improving the same GitHub project throughout the semester.</p>
+</footer>
+
+</body>
+</html>
