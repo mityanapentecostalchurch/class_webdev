@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ICT 2102 sample website demonstrating HTML Weeks 2–4 and CSS Week 5 concepts">
+
+    <title>Bright Future Learning Centre | ICT 2102 Sample</title>
+
+    <!-- Week 5: External CSS -->
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+<header id="top">
+    <div class="container">
+        <h1 id="main-title">Bright Future Learning Centre</h1>
+        <p class="tagline">
+            Quality education, digital skills and community learning
+        </p>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#programmes">Programmes</a>
+        <a href="#resources">Resources</a>
+        <a href="#registration">Registration</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#multimedia">Multimedia</a>
+    </div>
+</nav>
+
+<main>
+
+    <!-- =========================================================
+         WEEK 2: BASIC HTML STRUCTURE AND CONTENT
+         ========================================================= -->
+
+    <section id="home" class="hero section">
+        <div class="container">
+            <h2>Welcome to Bright Future Learning Centre</h2>
+
+            <p>
+                Bright Future Learning Centre provides practical education and
+                digital skills training for students and members of the community.
+                This sample website demonstrates how HTML and CSS can be combined
+                to create a complete multi-section website.
+            </p>
+
+            <p>
+                The website has been progressively developed using concepts from
+                Weeks 2, 3, 4 and 5 of ICT 2102 Web Development.
+            </p>
+
+            <a class="button-link" href="#registration">
+                Register Now
+            </a>
+        </div>
+    </section>
+
+    <!-- WEEK 2 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About the Centre</h2>
+
+            <p>
+                Our centre provides learning opportunities in computing,
+                mathematics, education and digital technology. We support
+                students through practical learning activities and access
+                to digital resources.
+            </p>
+
+            <h3>Our Mission</h3>
+
+            <p class="important">
+                To provide accessible, practical and technology-supported
+                education for our community.
+            </p>
+
+            <h3>Our Vision</h3>
+
+            <p>
+                To become a trusted centre for digital learning and
+                community education.
+            </p>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         WEEK 3: LISTS, LINKS, IMAGES AND TABLES
+         ========================================================= -->
+
+    <section id="programmes" class="section light-section">
+        <div class="container">
+
+            <h2>Programmes Offered</h2>
+
+            <p>
+                We offer several programmes designed to develop academic
+                knowledge and practical digital skills.
+            </p>
+
+            <!-- Unordered list -->
+            <h3>Our Main Programmes</h3>
+
+            <ul class="programme-list">
+                <li>Computer Science</li>
+                <li>Information Systems</li>
+                <li>Information Technology</li>
+                <li>Education</li>
+                <li>Data Science</li>
+            </ul>
+
+            <!-- Ordered list -->
+            <h3>Registration Process</h3>
+
+            <ol>
+                <li>Complete the online registration form.</li>
+                <li>Select your preferred programme.</li>
+                <li>Provide the required information.</li>
+                <li>Submit the registration form.</li>
+                <li>Contact the centre for further information.</li>
+            </ol>
+
+            <!-- Nested list -->
+            <h3>Computing Programme Areas</h3>
+
+            <ul>
+                <li>
+                    Computing
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Database Systems</li>
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Data
+                    <ul>
+                        <li>Data Analysis</li>
+                        <li>Data Science</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Week 3 hyperlinks -->
+            <h3>Useful Links</h3>
+
+            <p>
+                Visit our
+                <a href="#registration">registration section</a>
+                or return to the
+                <a href="#top">top of the page</a>.
+            </p>
+
+            <p>
+                You can also visit
+                <a href="https://www.umu.ac.ug/" target="_blank"
+                   rel="noopener">
+                    Uganda Martyrs University
+                </a>
+                for more information about university education.
+            </p>
+
+            <!-- Week 3 images -->
+            <h3>Learning Environment</h3>
+
+            <div class="image-grid">
+
+                <figure class="image-card">
+                    <img src="images/classroom.svg"
+                         alt="Students learning in a computer classroom">
+                    <figcaption>Computer laboratory learning</figcaption>
+                </figure>
+
+                <figure class="image-card">
+                    <img src="images/library.svg"
+                         alt="Students accessing books and digital resources">
+                    <figcaption>Library and digital resources</figcaption>
+                </figure>
+
+                <figure class="image-card">
+                    <img src="images/health.svg"
+                         alt="Illustration representing community education and health">
+                    <figcaption>Community learning and wellbeing</figcaption>
+                </figure>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WEEK 3 TABLE -->
+    <section id="resources" class="section">
+        <div class="container">
+
+            <h2>Programme Timetable</h2>
+
+            <p>
+                The following table demonstrates the HTML table concepts
+                introduced in Week 3 and the CSS table styling introduced
+                in Week 5.
+            </p>
+
+            <div class="table-wrapper">
+                <table>
+                    <caption>Weekly Learning Schedule</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Programme</th>
+                            <th>Time</th>
+                            <th>Room</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Web Development</td>
+                            <td>9:00 AM – 12:00 PM</td>
+                            <td>Lab 1</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Database Systems</td>
+                            <td>10:00 AM – 1:00 PM</td>
+                            <td>Lab 2</td>
+                        </tr>
+
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Artificial Intelligence</td>
+                            <td>9:00 AM – 12:00 PM</td>
+                            <td>Lab 1</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Data Science</td>
+                            <td>2:00 PM – 5:00 PM</td>
+                            <td>Lab 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================================
+         WEEK 4: HTML FORMS AND VALIDATION
+         ========================================================= -->
+
+    <section id="registration" class="section light-section">
+        <div class="container">
+
+            <h2>Student Registration Form</h2>
+
+            <p>
+                Complete this form to express your interest in joining
+                one of our programmes.
+            </p>
+
+            <form action="#" method="post" class="site-form">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div class="form-group">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text"
+                               id="full-name"
+                               name="full-name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telephone Number:</label>
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                               placeholder="0700 000 000"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date"
+                               id="dob"
+                               name="dob"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number"
+                               id="age"
+                               name="age"
+                               min="16"
+                               max="100"
+                               required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Programme Information</legend>
+
+                    <div class="form-group">
+                        <label for="programme">
+                            Select Programme:
+                        </label>
+
+                        <select id="programme"
+                                name="programme"
+                                required>
+
+                            <option value="">
+                                -- Select Programme --
+                            </option>
+
+                            <option value="computer-science">
+                                Computer Science
+                            </option>
+
+                            <option value="information-systems">
+                                Information Systems
+                            </option>
+
+                            <option value="information-technology">
+                                Information Technology
+                            </option>
+
+                            <option value="education">
+                                Education
+                            </option>
+
+                            <option value="data-science">
+                                Data Science
+                            </option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="form-label">Study Mode:</p>
+
+                        <div class="choice-group">
+
+                            <label>
+                                <input type="radio"
+                                       name="study-mode"
+                                       value="full-time"
+                                       required>
+                                Full-time
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="study-mode"
+                                       value="part-time">
+                                Part-time
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="study-mode"
+                                       value="weekend">
+                                Weekend
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="form-label">Areas of Interest:</p>
+
+                        <div class="choice-group">
+
+                            <label>
+                                <input type="checkbox"
+                                       name="interest"
+                                       value="web-development">
+                                Web Development
+                            </label>
+
+                            <label>
+                                <input type="checkbox"
+                                       name="interest"
+                                       value="database">
+                                Database Systems
+                            </label>
+
+                            <label>
+                                <input type="checkbox"
+                                       name="interest"
+                                       value="ai">
+                                Artificial Intelligence
+                            </label>
+
+                            <label>
+                                <input type="checkbox"
+                                       name="interest"
+                                       value="data-science">
+                                Data Science
+                            </label>
+
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Information</legend>
+
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text"
+                               id="username"
+                               name="username"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">
+                            Password (minimum 8 characters):
+                        </label>
+
+                        <input type="password"
+                               id="password"
+                               name="password"
+                               minlength="8"
+                               required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <div class="form-group">
+                        <label for="message">
+                            Why are you interested in this programme?
+                        </label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  placeholder="Write your message here..."
+                                  required></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="button-group">
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- WEEK 4 FEEDBACK -->
+    <section id="feedback" class="section">
+        <div class="container">
+
+            <h2>Website Feedback</h2>
+
+            <form action="#" method="post" class="site-form">
+
+                <div class="form-group">
+                    <label for="visitor-name">Your Name:</label>
+                    <input type="text"
+                           id="visitor-name"
+                           name="visitor-name"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitor-email">Email:</label>
+                    <input type="email"
+                           id="visitor-email"
+                           name="visitor-email"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rate the Website:</label>
+
+                    <select id="rating"
+                            name="rating"
+                            required>
+
+                        <option value="">-- Select Rating --</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="poor">Poor</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p class="form-label">
+                        Would you recommend this website?
+                    </p>
+
+                    <div class="choice-group">
+
+                        <label>
+                            <input type="radio"
+                                   name="recommend"
+                                   value="yes"
+                                   required>
+                            Yes
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                   name="recommend"
+                                   value="no">
+                            No
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-message">
+                        Your Feedback:
+                    </label>
+
+                    <textarea id="feedback-message"
+                              name="feedback-message"
+                              rows="5"
+                              required></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Send Feedback</button>
+                    <button type="reset">Clear</button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- =========================================================
+         WEEK 4: AUDIO AND VIDEO
+         ========================================================= -->
+
+    <section id="multimedia" class="section light-section">
+        <div class="container">
+
+            <h2>Educational Multimedia</h2>
+
+            <article class="media-card">
+                <h3>Audio Lesson</h3>
+
+                <p>
+                    Listen to a short introductory audio example.
+                </p>
+
+                <audio controls>
+                    <source
+                        src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+                        type="audio/mpeg">
+
+                    Your browser does not support the audio element.
+                </audio>
+
+                <p class="media-note">
+                    In your group project, replace this demonstration
+                    audio with an audio recording relevant to your
+                    Education Centre.
+                </p>
+            </article>
+
+            <article class="media-card">
+                <h3>Video Lesson</h3>
+
+                <p>
+                    Watch the demonstration video below.
+                </p>
+
+                <video controls width="600">
+                    <source
+                        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support the video element.
+                </video>
+
+                <p class="media-note">
+                    In your group project, replace this demonstration
+                    video with relevant educational or institutional
+                    multimedia.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- WEEK 5: CSS DEMONSTRATION -->
+    <section id="css-demo" class="section">
+        <div class="container">
+
+            <h2>Week 5 CSS Demonstration</h2>
+
+            <p>
+                This section demonstrates several CSS concepts introduced
+                in Week 5.
+            </p>
+
+            <div class="card">
+                <h3>Reusable Class</h3>
+                <p>
+                    This section uses the <strong>card</strong> class,
+                    which can be reused for other sections.
+                </p>
+            </div>
+
+            <div class="card highlight-card">
+                <h3>Another Styled Section</h3>
+                <p>
+                    The same card styling is reused, while an additional
+                    class changes the appearance of this particular section.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>
+            <strong>ICT 2102: Web Development</strong>
+        </p>
+
+        <p>
+            Sample website integrating Weeks 2–5 concepts.
+        </p>
+
+        <p>
+            <a href="#top">Back to Top</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+/*  ICT 2102 – WEEK 5 SAMPLE CSS
+   This stylesheet demonstrates:
+   - Element selectors
+   - Class selectors
+   - ID selectors
+   - Colours
+   - Fonts
+   - Backgrounds
+   - Links and hover effects
+   - Images
+   - Tables
+   - Forms
+   - Buttons
+   - Margin, padding and borders */
+
+
+/*    1. GENERAL PAGE STYLING*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f4f6f8;
+    line-height: 1.6;
+}
+
+
+/* Reusable content width */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/*   2. HEADER */
+
+header {
+    background-color: #1f4e79;
+    color: white;
+    padding: 35px 0;
+    text-align: center;
+}
+
+/* ID selector demonstration */
+
+#main-title {
+    margin: 0;
+    font-size: 38px;
+}
+
+/* Class selector demonstration */
+
+.tagline {
+    color: white;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+
+/*    3. NAVIGATION */
+
+.main-nav {
+    background-color: #222222;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.main-nav a:hover {
+    background-color: #1f4e79;
+    text-decoration: underline;
+}
+
+
+/*    4. GENERAL SECTIONS */
+
+.section {
+    padding: 50px 0;
+}
+
+.light-section {
+    background-color: #eaf1f7;
+}
+
+.hero {
+    background-color: white;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h2 {
+    color: #1f4e79;
+    font-size: 30px;
+}
+
+h3 {
+    color: #333333;
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.important {
+    color: #9b1c1c;
+    font-weight: bold;
+    background-color: #fff3f3;
+    border-left: 5px solid #9b1c1c;
+    padding: 12px;
+}
+
+
+/*  5. BUTTON LINK */
+
+.button-link {
+    display: inline-block;
+    background-color: #1f4e79;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.button-link:hover {
+    background-color: #163a5b;
+}
+
+
+/*   6. LISTS */
+
+.programme-list {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 20px 20px 20px 40px;
+    border-radius: 6px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+
+/*    7. LINKS*/
+
+a {
+    color: #1f4e79;
+}
+
+a:hover {
+    color: #9b1c1c;
+}
+
+
+/*    8. IMAGES */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image-card {
+    margin: 0;
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid #777777;
+    border-radius: 8px;
+}
+
+.image-card figcaption {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+
+/*    9. TABLE */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+    padding: 10px;
+    color: #1f4e79;
+}
+
+th,
+td {
+    border: 1px solid #555555;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1f4e79;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f4f7;
+}
+
+
+/*    10. FORMS */
+
+.site-form {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 1px solid #bbbbbb;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+legend {
+    color: #1f4e79;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label,
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 3px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #1f4e79;
+    border-color: #1f4e79;
+}
+
+
+/* Radio buttons and checkboxes should not be stretched
+   to 100% width like text fields. */
+
+.choice-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.choice-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+}
+
+.choice-group input[type="radio"],
+.choice-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+
+/*    11. FORM BUTTONS */
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button[type="submit"] {
+    background-color: #1f4e79;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #777777;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+/*    12. MULTIMEDIA */
+
+.media-card {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 2px solid #555555;
+    border-radius: 8px;
+}
+
+.media-note {
+    font-size: 14px;
+    color: #666666;
+    font-style: italic;
+}
+
+
+/*    13. WEEK 5 CLASS / CARD DEMONSTRATION */
+
+.card {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.highlight-card {
+    border-left: 6px solid #1f4e79;
+    background-color: #eef5fb;
+}
+
+
+/*    14. FOOTER */
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #9ec5e8;
+}
+
+
+/* 15. SIMPLE RESPONSIVE IMPROVEMENT
+   This is only a small demonstration.
+   Full responsive design is covered later in the course. */
+
+@media (max-width: 700px) {
+
+    #main-title {
+        font-size: 30px;
+    }
+
+    .main-nav a {
+        display: block;
+        margin: 4px 0;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .choice-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
