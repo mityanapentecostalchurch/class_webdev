@@ -1,0 +1,212 @@
+/* ICT 2102 – Week 6: CSS Layout and Positioning
+   Practise by changing the values and observing the result in the browser. */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #243047;
+    background-color: #f4f7fb;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 20px 6%;
+    color: white;
+    background-color: #183b66;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 1.55rem;
+}
+
+.brand p {
+    margin: 4px 0 0;
+}
+
+.main-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    display: block;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.main-nav a:hover {
+    background-color: #315b8b;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 28px 0;
+    padding: 42px;
+    background-color: #e2edf9;
+    border: 1px solid #c7d9ed;
+    border-radius: 12px;
+}
+
+.hero > div {
+    flex: 1 1 400px;
+}
+
+.hero h2 {
+    margin: 0 0 12px;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1.15;
+}
+
+.eyebrow {
+    margin-top: 0;
+    color: #245c91;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    color: white;
+    background-color: #245c91;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.notice {
+    position: relative;
+    flex: 0 1 230px;
+    padding: 18px;
+    background-color: #fff6d9;
+    border: 2px solid #e5c35b;
+    border-radius: 8px;
+}
+
+.notice p {
+    margin-bottom: 0;
+}
+
+.content-section {
+    margin: 28px 0;
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #dce3ec;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    margin-top: 0;
+}
+
+.section-intro {
+    margin-top: -6px;
+    color: #59677a;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    position: relative;
+    padding: 22px;
+    background-color: #f9fbfe;
+    border: 1px solid #cfd9e6;
+    border-radius: 9px;
+}
+
+.course-number {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 3px 9px;
+    color: #183b66;
+    background-color: #dceafb;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.course-card h3 {
+    margin: 0 0 8px;
+}
+
+.course-card p {
+    margin-top: 0;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 6px;
+    color: #174f88;
+    font-weight: bold;
+}
+
+.learning-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.learning-item {
+    flex: 1 1 200px;
+    padding: 18px;
+    border-left: 4px solid #3778b8;
+    background-color: #f1f6fc;
+}
+
+.learning-item h3 {
+    margin-top: 0;
+}
+
+.contact-section {
+    border-left: 5px solid #3778b8;
+}
+
+.site-footer {
+    margin-top: 36px;
+    padding: 18px 6%;
+    text-align: center;
+    color: white;
+    background-color: #183b66;
+}
+
+/* PRACTICE CHALLENGE:
+   1. Change the course grid from 3 columns to 2 columns.
+   2. Change the grid gap to 30px.
+   3. Change the header's justify-content to center.
+   4. Change the hero's flex-direction to column and observe the result.
+   5. Change .notice to position: fixed; then undo it after observing.
+   6. Change .course-card padding and border to practise the Box Model.
+   7. Try display: block on .main-nav a and compare it with inline-block.
+   8. Use Developer Tools to inspect a card's margin, padding and border.
+*/

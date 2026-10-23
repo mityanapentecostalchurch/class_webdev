@@ -1,62 +1,108 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>ICT_UNITE Website</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future Learning Centre</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+    <header class="site-header">
+        <div class="brand">
+            <h1>Bright Future Learning Centre</h1>
+            <p>Learn today. Lead tomorrow.</p>
+        </div>
 
-<!-- 6. Practical 3: Headings, Paragraphs and Line Breaks -->
-<h1>ICT 2102 Web Development</h1>
-<h2>About the Course</h2>
-<p>This course introduces me to the principles and practices of web development.</p>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<p>Web development involves designing and developing websites and web-based applications.<br>
-I am learning how HTML is used to structure web content.</p>
+    <main>
+        <section id="home" class="hero">
+            <div>
+                <p class="eyebrow">Welcome to Bright Future</p>
+                <h2>Build skills for your future</h2>
+                <p>Explore practical courses designed to help learners grow their knowledge and confidence.</p>
+                <a class="button" href="#courses">Explore Courses</a>
+            </div>
+            <aside class="notice">
+                <strong>Notice</strong>
+                <p>Registration for the new term is open.</p>
+            </aside>
+        </section>
 
-<!-- Basic Text Formatting -->
-<p>
-I am studying <strong>ICT</strong> and learning
-<em>web development</em>.
-</p>
+        <section id="about" class="content-section">
+            <h2>About the Centre</h2>
+            <p>We provide a supportive learning environment with practical lessons, experienced tutors and flexible learning options.</p>
+        </section>
 
-<!-- Unordered list: -->
-<h2>My Interests</h2>
-<ul>
-    <li>Programming</li>
-    <li>Teaching</li>
-    <li>Reading</li>
-</ul>
-<!-- Ordered list: -->
-<h2>My Goals</h2>
-<ol>
-    <li>Complete my degree</li>
-    <li>Become a good teacher</li>
-    <li>Develop useful websites</li>
-</ol>
+        <section id="courses" class="content-section">
+            <h2>Our Courses</h2>
+            <p class="section-intro">Choose a course that matches your interests and goals.</p>
 
-<!-- Comments -->
-<!-- Personal information -->
+            <div class="course-grid">
+                <article class="course-card">
+                    <span class="course-number">01</span>
+                    <h3>Web Development</h3>
+                    <p>Learn how to build and style websites using HTML and CSS.</p>
+                    <a href="#contact">Ask about this course</a>
+                </article>
 
-<h2>About Me</h2>
-<p>I am a student teacher learning web development.</p>
+                <article class="course-card">
+                    <span class="course-number">02</span>
+                    <h3>Computer Applications</h3>
+                    <p>Practise useful digital skills for study, work and business.</p>
+                    <a href="#contact">Ask about this course</a>
+                </article>
 
-<header>
-    <h1>My Educational Website</h1>
-</header>
+                <article class="course-card">
+                    <span class="course-number">03</span>
+                    <h3>Data Skills</h3>
+                    <p>Learn introductory methods for organising and understanding data.</p>
+                    <a href="#contact">Ask about this course</a>
+                </article>
 
-<main>
-    <h2>About Me</h2>
-    <p>I am learning how to design and develop websites.</p>
-</main>
+                <article class="course-card">
+                    <span class="course-number">04</span>
+                    <h3>Digital Literacy</h3>
+                    <p>Build confidence using computers, the internet and online tools.</p>
+                    <a href="#contact">Ask about this course</a>
+                </article>
+            </div>
+        </section>
 
-<footer>
-    <p>Close ICT 2102 Web Development</p>
-</footer>
+        <section class="content-section">
+            <h2>Learning at a Glance</h2>
+            <div class="learning-row">
+                <div class="learning-item">
+                    <h3>Practical Lessons</h3>
+                    <p>Apply concepts through guided exercises.</p>
+                </div>
+                <div class="learning-item">
+                    <h3>Supportive Tutors</h3>
+                    <p>Get guidance as you develop new skills.</p>
+                </div>
+                <div class="learning-item">
+                    <h3>Flexible Learning</h3>
+                    <p>Build knowledge step by step.</p>
+                </div>
+            </div>
+        </section>
 
+        <section id="contact" class="content-section contact-section">
+            <h2>Contact Us</h2>
+            <p>Visit the centre to learn more about available courses.</p>
+            <p><strong>Email:</strong> info@brightfuture.example</p>
+            <p><strong>Phone:</strong> +256 700 000 000</p>
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <p>&copy; 2026 Bright Future Learning Centre. Practice website for ICT 2102.</p>
+    </footer>
 </body>
-
 </html>
