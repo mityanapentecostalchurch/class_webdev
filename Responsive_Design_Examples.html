@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICT 2102 – Week 7: Responsive Web Design Practical</title>
+        <link rel="stylesheet" href="css/style_responive.css">
+
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="brand">
+      <h1>UMU Learning Portal</h1>
+      <p>ICT 2102 · Web Development</p>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#cards">Course cards</a>
+      <a href="#image-layout">Image layout</a>
+      <a href="#timetable">Timetable</a>
+      <a href="#registration">Registration</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="label">WEEK 7 PRACTICAL</p>
+        <h2>One website. Different screen sizes.</h2>
+        <p>Responsive Web Design allows a website to adjust its layout to phones, tablets, laptops and desktop computers. Resize this browser window to observe the changes.</p>
+        <a class="button" href="#cards">Explore the examples</a>
+      </div>
+      <aside class="hero-note">
+        <strong>Observe this box</strong>
+        <p>On a wide screen, this notice sits beside the introduction. On a phone, the two areas stack vertically.</p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>Learning outcomes</h2>
+      <p>By the end of this practical, students should be able to:</p>
+      <ul>
+        <li>Explain the purpose of the viewport meta tag and media queries.</li>
+        <li>Build flexible layouts using CSS Grid and Flexbox.</li>
+        <li>Make images, tables and forms usable on narrow screens.</li>
+        <li>Test a webpage at desktop, tablet and mobile widths.</li>
+      </ul>
+      <p class="muted"><strong>Important:</strong> This page uses embedded CSS, so save this single file and open it in a browser. No separate stylesheet is required.</p>
+    </section>
+
+    <section class="section" id="cards">
+      <h2>Example 1: Responsive card grid</h2>
+      <p class="muted">The grid has three columns on wide screens, two columns at 800px and below, and one column at 560px and below.</p>
+      <div class="course-grid">
+        <article class="course-card">
+          <span class="label">Week 2–3</span>
+          <h3>HTML Structure</h3>
+          <p>Headings, paragraphs, links, lists, images and tables provide structure and meaning.</p>
+        </article>
+        <article class="course-card">
+          <span class="label">Week 4</span>
+          <h3>Forms & Media</h3>
+          <p>Labels, input controls, audio and video help users submit information and access content.</p>
+        </article>
+        <article class="course-card">
+          <span class="label">Week 5–6</span>
+          <h3>CSS & Layout</h3>
+          <p>Colors, spacing, Flexbox and Grid organise the page and establish its visual style.</p>
+        </article>
+        <article class="course-card">
+          <span class="label">Week 7</span>
+          <h3>Responsive Design</h3>
+          <p>Fluid sizing and breakpoints help the same content fit different screens.</p>
+        </article>
+        <article class="course-card">
+          <span class="label">Practice</span>
+          <h3>Test on Devices</h3>
+          <p>Use browser developer tools to check layout, readability and horizontal overflow.</p>
+        </article>
+        <article class="course-card">
+          <span class="label">Challenge</span>
+          <h3>Change the Breakpoints</h3>
+          <p>Try 900px and 600px instead, then compare when the layout changes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="image-layout">
+      <h2>Example 2: Responsive image and content</h2>
+      <p class="muted">The image is limited to the width of its container. The image and text sit side by side on larger screens and stack on phones.</p>
+      <div class="feature-row">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80"
+             alt="University students walking across a campus">
+        <div class="feature-copy">
+          <h3>Learning beyond the classroom</h3>
+          <p>Images should not overflow their containers. The rule <code>max-width: 100%; height: auto;</code> lets an image shrink while preserving its proportions.</p>
+          <p>Try temporarily changing <code>max-width: 100%</code> to <code>width: 600px</code> in the CSS, then observe what can happen on a narrow screen. Restore the responsive rule afterwards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="timetable">
+      <h2>Example 3: Responsive timetable</h2>
+      <p class="muted">On a narrow screen, the table keeps its readable minimum width and the surrounding wrapper allows horizontal scrolling. Scroll inside the table area to see all columns.</p>
+      <div class="table-scroll" tabindex="0" aria-label="Scrollable course timetable">
+        <table>
+          <thead>
+            <tr><th>Week</th><th>Topic</th><th>Practical activity</th><th>Expected output</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Week 4</td><td>HTML Forms and Media</td><td>Create a registration form</td><td>Form with labelled controls</td></tr>
+            <tr><td>Week 5</td><td>Introduction to CSS</td><td>Style the portal</td><td>Consistent colors and spacing</td></tr>
+            <tr><td>Week 6</td><td>Layout and Positioning</td><td>Use Flexbox and Grid</td><td>Organised page sections</td></tr>
+            <tr><td>Week 7</td><td>Responsive Web Design</td><td>Test at three screen sizes</td><td>Mobile-friendly portal</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="registration">
+      <h2>Example 4: Responsive registration form</h2>
+      <p class="muted">The form uses two columns on wide screens and one column on phones. This is a front-end demonstration: submitting it will not store data in a database.</p>
+      <form onsubmit="event.preventDefault(); alert('Demonstration only: this form has no database connection.');">
+        <div class="form-grid">
+          <div class="field">
+            <label for="student-name">Full name</label>
+            <input id="student-name" name="student-name" type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="field">
+            <label for="student-email">Email address</label>
+            <input id="student-email" name="student-email" type="email" placeholder="student@example.com" required>
+          </div>
+          <div class="field">
+            <label for="student-number">Student number</label>
+            <input id="student-number" name="student-number" type="text" placeholder="e.g. 2026/CSC/001">
+          </div>
+          <div class="field">
+            <label for="study-mode">Study mode</label>
+            <select id="study-mode" name="study-mode">
+              <option value="">Select an option</option>
+              <option>Day</option>
+              <option>Evening</option>
+              <option>Weekend</option>
+            </select>
+          </div>
+          <div class="field full-width">
+            <label for="learning-goal">What do you want to learn?</label>
+            <textarea id="learning-goal" name="learning-goal" placeholder="Write a short response..."></textarea>
+          </div>
+          <div class="form-actions full-width">
+            <button type="submit">Submit demonstration</button>
+            <button type="reset">Clear form</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="section">
+      <h2>Example 5: Fluid typography and spacing</h2>
+      <p>Notice that the main heading and section padding adjust with the available screen width. The CSS function <code>clamp(minimum, preferred, maximum)</code> helps prevent text from becoming too small or too large.</p>
+      <p>Example: <code>font-size: clamp(1.7rem, 4vw, 2.8rem);</code></p>
+    </section>
+
+    <section class="section">
+      <h2>Practical tasks</h2>
+      <ol>
+        <li>Open the page in a desktop browser and record how many card columns you see.</li>
+        <li>Open Developer Tools and activate the device toolbar. Test a tablet and a phone viewport.</li>
+        <li>Change the tablet breakpoint from <code>800px</code> to <code>900px</code>. What changes?</li>
+        <li>Change the mobile breakpoint from <code>560px</code> to <code>650px</code>. Test again.</li>
+        <li>Temporarily remove <code>flex-direction: column</code> from the mobile rule. Describe what happens to the hero and image layout.</li>
+        <li>Check that no text or image spills outside the viewport and that the table can be scrolled horizontally.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Responsive design checklist</h2>
+      <ul>
+        <li>Viewport meta tag is present.</li>
+        <li>Images use <code>max-width: 100%</code> and <code>height: auto</code>.</li>
+        <li>Layout uses flexible units, Flexbox or CSS Grid.</li>
+        <li>Media queries adjust the layout at appropriate breakpoints.</li>
+        <li>Navigation, forms and tables remain usable on a phone.</li>
+        <li>Content is readable without zooming in or scrolling the whole page sideways.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>ICT 2102 – Web Development | Week 7: Responsive Web Design</p>
+    <a href="#home" style="color:white">Back to top ↑</a>
+  </footer>
+
+  <div class="screen-status status-desktop" aria-hidden="true"></div>
+  <div class="screen-status status-tablet" aria-hidden="true" style="display:none"></div>
+  <div class="screen-status status-mobile" aria-hidden="true" style="display:none"></div>
+  <script>
+    /* Small teaching aid: update the visible status label for the current width. */
+    function updateScreenStatus() {
+      const width = window.innerWidth;
+      document.querySelector('.status-desktop').style.display = width > 800 ? 'block' : 'none';
+      document.querySelector('.status-tablet').style.display = width <= 800 && width > 560 ? 'block' : 'none';
+      document.querySelector('.status-mobile').style.display = width <= 560 ? 'block' : 'none';
+    }
+    window.addEventListener('resize', updateScreenStatus);
+    updateScreenStatus();
+  </script>
+</body>
+</html>

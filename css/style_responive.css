@@ -1,0 +1,563 @@
+/* ICT 2102 – Week 7: Responsive Web Design
+   This stylesheet continues the Week 6 CSS Layout and Positioning styles.
+   Practise changing widths, gaps, breakpoints and layout properties. */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #243047;
+    background-color: #f4f7fb;
+}
+
+img, video, audio, iframe {
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+a {
+    color: #174f88;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #e5b83e;
+    outline-offset: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 12px;
+    z-index: 100;
+    padding: 10px 14px;
+    color: #183b66;
+    background: white;
+    border: 2px solid #183b66;
+    border-radius: 5px;
+}
+
+.skip-link:focus {
+    top: 12px;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 20px 6%;
+    color: white;
+    background-color: #183b66;
+}
+
+.brand {
+    min-width: 0;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: clamp(1.45rem, 3vw, 1.9rem);
+}
+
+.brand p {
+    margin: 4px 0 0;
+}
+
+.brand .eyebrow {
+    color: #c8e2ff;
+}
+
+.eyebrow {
+    margin-top: 0;
+    color: #245c91;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .82rem;
+}
+
+.main-nav {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-nav a {
+    display: block;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    color: white;
+    background-color: #315b8b;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 28px 0;
+    padding: clamp(22px, 4vw, 42px);
+    background-color: #e2edf9;
+    border: 1px solid #c7d9ed;
+    border-radius: 12px;
+}
+
+.hero-copy {
+    flex: 1 1 400px;
+    min-width: 0;
+}
+
+.hero h2 {
+    margin: 0 0 12px;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1.15;
+}
+
+.hero-copy > p:not(.eyebrow) {
+    max-width: 68ch;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    color: white;
+    background-color: #245c91;
+    border: 1px solid #245c91;
+    text-decoration: none;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white;
+    background-color: #183b66;
+}
+
+.button-secondary {
+    color: #243047;
+    background: white;
+    border-color: #b8c7d8;
+}
+
+.button-secondary:hover {
+    color: #183b66;
+    background: #eaf1f8;
+}
+
+.notice {
+    position: relative;
+    flex: 0 1 280px;
+    min-width: 0;
+    padding: 18px;
+    background-color: #fff6d9;
+    border: 2px solid #e5c35b;
+    border-radius: 8px;
+}
+
+.notice h3 {
+    margin-top: 0;
+}
+
+.notice p {
+    margin-bottom: 0;
+}
+
+.content-section {
+    margin: 28px 0;
+    padding: clamp(18px, 3vw, 28px);
+    background-color: white;
+    border: 1px solid #dce3ec;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    margin-top: 0;
+}
+
+.section-intro {
+    margin-top: -6px;
+    color: #59677a;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    position: relative;
+    min-width: 0;
+    padding: 22px;
+    background-color: #f9fbfe;
+    border: 1px solid #cfd9e6;
+    border-radius: 9px;
+    overflow-wrap: anywhere;
+}
+
+.course-number {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 3px 9px;
+    color: #183b66;
+    background-color: #dceafb;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.course-card h3 {
+    margin: 0 0 8px;
+}
+
+.course-card p {
+    margin-top: 0;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 6px;
+    color: #174f88;
+    font-weight: bold;
+}
+
+.learning-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.learning-item {
+    flex: 1 1 200px;
+    min-width: 0;
+    padding: 18px;
+    border-left: 4px solid #3778b8;
+    background-color: #f1f6fc;
+}
+
+.learning-item h3 {
+    margin-top: 0;
+}
+
+/* Tables: preserve the table structure and scroll its wrapper on small screens. */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #cfd9e6;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    background: white;
+}
+
+caption {
+    padding: 12px;
+    text-align: left;
+    color: #243047;
+    font-weight: bold;
+    background: #edf4fb;
+}
+
+th, td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #dce3ec;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead th {
+    color: white;
+    background: #245c91;
+}
+
+tbody th {
+    color: #183b66;
+    background: #f7faff;
+}
+
+tbody tr:nth-child(even) td {
+    background: #f8fbfe;
+}
+
+tbody tr:last-child th,
+tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+/* Forms use Grid to keep labels and controls aligned as available width changes. */
+.form-layout {
+    display: grid;
+    gap: 20px;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 18px;
+    border: 1px solid #cfd9e6;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 6px;
+    color: #183b66;
+    font-weight: bold;
+}
+
+.form-grid,
+.control-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-field {
+    min-width: 0;
+}
+
+.form-field > label,
+.field-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-field small,
+.small-note {
+    display: block;
+    margin-top: 5px;
+    color: #59677a;
+    font-size: .88rem;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 10px 11px;
+    border: 1px solid #b9c7d5;
+    border-radius: 6px;
+    color: #243047;
+    background: white;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #245c91;
+}
+
+.choice-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 16px;
+}
+
+.choice {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+.choice-wrap {
+    row-gap: 10px;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Multimedia players are fluid rather than fixed to a desktop pixel width. */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.media-card {
+    min-width: 0;
+    padding: 20px;
+    background: #f9fbfe;
+    border: 1px solid #cfd9e6;
+    border-radius: 9px;
+}
+
+.media-card h3 {
+    margin-top: 0;
+}
+
+audio,
+video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.check-list {
+    padding-left: 22px;
+}
+
+.check-list li {
+    margin: 6px 0;
+}
+
+.site-footer {
+    margin-top: 36px;
+    padding: 22px 6%;
+    text-align: center;
+    color: white;
+    background-color: #183b66;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+.site-footer a {
+    display: inline-block;
+    margin-top: 8px;
+    color: white;
+}
+
+/* Tablet breakpoint: reduce the card grid to one column when it becomes crowded. */
+@media (max-width: 760px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hero {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .notice {
+        flex: 1 1 auto;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+}
+
+/* Mobile breakpoint: stack navigation, grids and form fields for narrow screens. */
+@media (max-width: 560px) {
+    .site-header {
+        padding: 18px 4%;
+    }
+
+    .main-nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5px;
+    }
+
+    .main-nav a {
+        padding: 9px 8px;
+        background-color: #244a76;
+        text-align: center;
+    }
+
+    main {
+        width: min(100% - 24px, 1100px);
+    }
+
+    .hero {
+        margin: 18px 0;
+        padding: 20px;
+        gap: 18px;
+    }
+
+    .content-section {
+        margin: 18px 0;
+        padding: 18px;
+    }
+
+    .course-grid,
+    .form-grid,
+    .control-grid,
+    .media-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+    }
+
+    .course-card {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 13px;
+    }
+
+    .form-actions .button {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* PRACTICE CHALLENGES:
+   1. Change the two-column course grid to three columns, then test a narrow screen.
+   2. Change the mobile breakpoint from 560px to 640px and compare.
+   3. Temporarily remove the viewport meta tag and observe mobile rendering.
+   4. Change .hero from flex-direction: column to row inside the mobile query.
+   5. Remove overflow-x: auto from .table-wrapper and observe the table on a phone.
+   6. Change the form grid gap and inspect the Box Model in Developer Tools.
+   7. Try a different background colour for even table rows.
+   8. Test every section at phone, tablet and desktop widths.
+*/

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Future Learning Centre</title>
+  <link rel="stylesheet" href="css/css_javascript.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="brand"><h1>Bright Future Learning Centre</h1><p>Learn today. Lead tomorrow.</p></div>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">☰ Menu</button>
+    <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#courses">Courses</a><a href="#about">About</a><a href="#registration">Register</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Welcome to Bright Future</p>
+        <h2>Build skills for your future</h2>
+        <p>Explore practical courses designed to help learners grow their knowledge and confidence.</p>
+        <a class="button" href="#courses">Explore Courses</a>
+      </div>
+      <aside class="notice"><strong>Notice</strong><p>Registration for the new term is open.</p><p>Use the course finder to explore available courses.</p></aside>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About the Centre</h2>
+      <div class="about-layout">
+        <p>We provide a supportive learning environment with practical lessons, experienced tutors and flexible learning options. Our programmes help learners develop skills they can apply in education, employment and business.</p>
+        <aside class="about-highlight"><strong>Our approach</strong><p>Learn a concept, practise it, and apply it to a real task.</p></aside>
+      </div>
+    </section>
+
+    <section id="courses" class="content-section">
+      <h2>Our Courses</h2><p class="section-intro">Choose a course that matches your interests and goals.</p>
+      <div class="course-tools">
+        <div class="field"><label for="course-search">Search courses</label><input type="search" id="course-search" placeholder="Type a course name..."></div>
+        <div class="field"><label for="course-category">Filter by area</label>
+          <select id="course-category">
+            <option value="all">All areas</option><option value="technology">Technology</option><option value="business">Business and productivity</option><option value="foundation">Digital foundations</option>
+          </select>
+        </div>
+        <button class="button button-secondary" type="button" id="clear-search">Clear filters</button>
+      </div>
+      <p id="course-result" class="result-message" aria-live="polite">Showing all 4 courses.</p>
+      <div class="course-grid" id="course-grid">
+        <article class="course-card" data-category="technology"><span class="course-number">01</span><h3>Web Development</h3><p>Learn how to build and style websites using HTML, CSS and JavaScript.</p><a href="#registration">Register interest</a></article>
+        <article class="course-card" data-category="business"><span class="course-number">02</span><h3>Computer Applications</h3><p>Practise useful digital skills for study, work and business.</p><a href="#registration">Register interest</a></article>
+        <article class="course-card" data-category="technology"><span class="course-number">03</span><h3>Data Skills</h3><p>Learn introductory methods for organising and understanding data.</p><a href="#registration">Register interest</a></article>
+        <article class="course-card" data-category="foundation"><span class="course-number">04</span><h3>Digital Literacy</h3><p>Build confidence using computers, the internet and online tools.</p><a href="#registration">Register interest</a></article>
+      </div>
+      <p id="no-results" class="no-results" hidden>No courses match your search. Try another word or clear the filters.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Learning at a Glance</h2>
+      <div class="learning-row">
+        <div class="learning-item"><h3>Practical Lessons</h3><p>Apply concepts through guided exercises.</p></div>
+        <div class="learning-item"><h3>Supportive Tutors</h3><p>Get guidance as you develop new skills.</p></div>
+        <div class="learning-item"><h3>Flexible Learning</h3><p>Build knowledge step by step.</p></div>
+      </div>
+    </section>
+
+    <section id="registration" class="content-section">
+      <h2>Register Your Interest</h2><p class="section-intro">Complete the form and observe how JavaScript responds to user input.</p>
+      <form id="registration-form" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="full-name">Full name *</label><input id="full-name" name="fullName" type="text" minlength="3" required placeholder="Enter your full name"><small id="name-error" class="field-error"></small></div>
+          <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" required placeholder="name@example.com"><small id="email-error" class="field-error"></small></div>
+          <div class="field"><label for="phone">Telephone number</label><input id="phone" name="phone" type="tel" placeholder="+256 700 000 000"></div>
+          <div class="field"><label for="selected-course">Course of interest *</label><select id="selected-course" required><option value="">Select a course</option><option>Web Development</option><option>Computer Applications</option><option>Data Skills</option><option>Digital Literacy</option></select><small id="course-error" class="field-error"></small></div>
+          <div class="field full-width"><label for="message">Why are you interested in this course?</label><textarea id="message" rows="4" maxlength="250" placeholder="Write a short message (maximum 250 characters)"></textarea><small id="character-count">0 / 250 characters</small></div>
+          <div class="form-actions full-width"><button class="button" type="submit">Submit interest</button><button class="button button-light" type="reset">Clear form</button></div>
+        </div>
+        <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
+      <h2>Contact Us</h2><p>Visit the centre to learn more about available courses.</p>
+      <div class="contact-grid"><p><strong>Email:</strong> info@brightfuture.example</p><p><strong>Phone:</strong> +256 700 000 000</p></div>
+      <button class="button button-secondary" id="welcome-button" type="button">Display welcome message</button>
+    </section>
+  </main>
+  <footer class="site-footer"><p>&copy; <span id="current-year">2026</span> Bright Future Learning Centre. Practice website for ICT 2102.</p><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>

@@ -1,0 +1,270 @@
+/*
+ ICT 2102 – Responsive Design additions
+ These rules complement the existing css/css_layout.css file.
+ Concepts demonstrated: fluid sizing, Flexbox, CSS Grid,
+ media queries, responsive navigation and responsive media.
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+header {
+    padding: clamp(1.25rem, 4vw, 3rem) 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    line-height: 1.2;
+}
+
+header h2 {
+    font-size: clamp(1.15rem, 2.8vw, 1.8rem);
+}
+
+.page-container {
+    width: min(1100px, 94%);
+    margin-inline: auto;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem 1.25rem;
+    width: 100%;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 0.55rem 0.75rem;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    display: none;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    padding: 0.55rem 0.8rem;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+main > section {
+    margin-block: clamp(1rem, 3vw, 2rem);
+    padding: clamp(1rem, 3vw, 2rem);
+    min-width: 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+form {
+    width: 100%;
+    max-width: 100%;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0 0 1rem;
+    padding: clamp(0.8rem, 2vw, 1.25rem);
+}
+
+/* Two-column form groups on larger screens. */
+form fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem 1rem;
+}
+
+form fieldset legend {
+    grid-column: 1 / -1;
+    padding-inline: 0.35rem;
+}
+
+form fieldset p {
+    min-width: 0;
+    margin: 0.45rem 0;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 0.65rem;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    max-width: none;
+    margin-inline-end: 0.3rem;
+}
+
+button {
+    max-width: 100%;
+    font: inherit;
+    cursor: pointer;
+}
+
+.responsive-media {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+audio.responsive-media {
+    max-width: 100%;
+}
+
+img,
+iframe,
+embed,
+object {
+    max-width: 100%;
+}
+
+table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.form-message {
+    overflow-wrap: anywhere;
+}
+
+footer {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+/* Tablet: reduce the page width and keep form controls flexible. */
+@media (max-width: 800px) {
+    .page-container {
+        width: 96%;
+    }
+
+    main > section {
+        padding: 1.1rem;
+    }
+
+    .nav-links {
+        gap: 0.35rem;
+    }
+}
+
+/* Mobile: stack form fields and turn navigation into a collapsible menu. */
+@media (max-width: 600px) {
+    .site-nav {
+        display: block;
+        padding: 0.5rem 3%;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.15rem;
+        padding-top: 0.5rem;
+    }
+
+    .nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.7rem;
+    }
+
+    form fieldset {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    form fieldset legend {
+        grid-column: 1;
+    }
+
+    main > section {
+        padding: 0.9rem;
+        margin-block: 0.9rem;
+    }
+
+    header p {
+        max-width: 38ch;
+        margin-inline: auto;
+    }
+
+    video,
+    audio {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    button {
+        min-height: 42px;
+    }
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

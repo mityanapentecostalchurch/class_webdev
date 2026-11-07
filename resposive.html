@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ICT 2102 Web Development learning portal with course layouts, tables, forms and multimedia.">
+    <title>ICT 2102 | Web Development Learning Portal</title>
+    <link rel="stylesheet" href="css/style_responive.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+        <div class="brand">
+            <p class="eyebrow">ICT 2102 · Practical learning portal</p>
+            <h1>Web Development</h1>
+            <p>Building our website step by step: Weeks 2–7</p>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#courses">Course Layouts</a>
+            <a href="#timetable">Timetable</a>
+            <a href="#registration">Registration</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#multimedia">Multimedia</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">Welcome to the course portal</p>
+                <h2>Learn to design websites that work on every screen.</h2>
+                <p>This portal builds on our earlier HTML and CSS work. It brings together page structure, links, tables, forms, multimedia, the CSS Box Model, Flexbox, Grid, positioning and responsive design.</p>
+                <a class="button" href="#courses">Explore the learning sections</a>
+            </div>
+            <aside class="notice">
+                <h3>Current focus: Week 7</h3>
+                <p>Make the existing portal adapt to mobile, tablet and desktop screens using flexible layouts, responsive media and CSS media queries.</p>
+            </aside>
+        </section>
+
+        <section class="content-section" id="about">
+            <h2>About this learning portal</h2>
+            <p class="section-intro">This sample website is developed progressively. Each new week extends the same website rather than replacing earlier work.</p>
+            <div class="learning-row">
+                <article class="learning-item">
+                    <h3>HTML structure</h3>
+                    <p>Headings, paragraphs, links, lists, images, tables and semantic sections organise the content.</p>
+                </article>
+                <article class="learning-item">
+                    <h3>CSS layout</h3>
+                    <p>The Box Model, display, positioning, Flexbox and Grid control spacing and page arrangement.</p>
+                </article>
+                <article class="learning-item">
+                    <h3>Responsive design</h3>
+                    <p>Flexible widths and media queries adjust the layout to different viewport sizes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section" id="courses">
+            <h2>Course learning sections</h2>
+            <p class="section-intro">These cards continue the Week 6 layout exercise and use CSS Grid to arrange content.</p>
+            <div class="course-grid">
+                <article class="course-card">
+                    <span class="course-number">Week 2</span>
+                    <h3>HTML Foundations</h3>
+                    <p>Page structure, headings, paragraphs, links, lists and semantic HTML.</p>
+                    <a href="#about">Review portal structure</a>
+                </article>
+                <article class="course-card">
+                    <span class="course-number">Week 3</span>
+                    <h3>Tables and Page Content</h3>
+                    <p>Organise structured information with tables, lists, images and links.</p>
+                    <a href="#timetable">View sample timetable</a>
+                </article>
+                <article class="course-card">
+                    <span class="course-number">Week 4</span>
+                    <h3>Forms and Multimedia</h3>
+                    <p>Use labels, input types, fieldsets, audio and video controls.</p>
+                    <a href="#registration">Open registration form</a>
+                </article>
+                <article class="course-card">
+                    <span class="course-number">Week 5</span>
+                    <h3>CSS Fundamentals</h3>
+                    <p>Apply selectors, colours, typography, borders, backgrounds and spacing.</p>
+                    <a href="#about">Review styled sections</a>
+                </article>
+                <article class="course-card">
+                    <span class="course-number">Week 6</span>
+                    <h3>Layout and Positioning</h3>
+                    <p>Practise the Box Model, Flexbox, Grid, positioning and overflow.</p>
+                    <a href="#courses">Inspect card layouts</a>
+                </article>
+                <article class="course-card">
+                    <span class="course-number">Week 7</span>
+                    <h3>Responsive Web Design</h3>
+                    <p>Adapt navigation, cards, forms, tables and media for different screens.</p>
+                    <a href="#responsive-guide">View responsive design notes</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section" id="timetable">
+            <h2>Sample course timetable</h2>
+            <p class="section-intro">This table preserves the HTML table topic and demonstrates how wide tables can be handled on small screens.</p>
+            <div class="table-wrapper" role="region" aria-label="Sample course timetable; scroll horizontally on small screens" tabindex="0">
+                <table>
+                    <caption>Illustrative weekly learning plan</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Week</th>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Practical focus</th>
+                            <th scope="col">Output</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">2</th><td>HTML foundations</td><td>Build page structure</td><td>Basic webpage</td></tr>
+                        <tr><th scope="row">3</th><td>Tables and content</td><td>Create a structured table</td><td>Content page</td></tr>
+                        <tr><th scope="row">4</th><td>Forms and multimedia</td><td>Add form controls and media</td><td>Registration page</td></tr>
+                        <tr><th scope="row">5</th><td>CSS fundamentals</td><td>Style page elements</td><td>Styled webpage</td></tr>
+                        <tr><th scope="row">6</th><td>Layout and positioning</td><td>Use Flexbox, Grid and positioning</td><td>Multi-section layout</td></tr>
+                        <tr><th scope="row">7</th><td>Responsive design</td><td>Use fluid layouts and media queries</td><td>Responsive portal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-section" id="registration">
+            <h2>Student registration form</h2>
+            <p class="section-intro">This front-end form demonstrates labels, input types, grouping and built-in HTML validation. It does not save submissions to a server.</p>
+            <form action="#" method="get" class="form-layout">
+                <fieldset>
+                    <legend>Personal information</legend>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="full-name">Full name</label>
+                            <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="registration-number">Registration number</label>
+                            <input type="text" id="registration-number" name="registration-number" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Telephone number</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
+                        </div>
+                        <div class="form-field">
+                            <label for="dob">Date of birth</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+                        <div class="form-field">
+                            <label for="age">Age (16–100)</label>
+                            <input type="number" id="age" name="age" min="16" max="100" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Programme and study information</legend>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="programme">Programme</label>
+                            <select id="programme" name="programme" required>
+                                <option value="">-- Select programme --</option>
+                                <option value="ict">ICT</option>
+                                <option value="computer-science">Computer Science</option>
+                                <option value="mathematics">Mathematics</option>
+                                <option value="education">Education</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <span class="field-label">Study mode</span>
+                            <div class="choice-group">
+                                <label class="choice"><input type="radio" name="study-mode" value="day" required> Day</label>
+                                <label class="choice"><input type="radio" name="study-mode" value="evening"> Evening</label>
+                                <label class="choice"><input type="radio" name="study-mode" value="weekend"> Weekend</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <span class="field-label">Areas of interest</span>
+                        <div class="choice-group choice-wrap">
+                            <label class="choice"><input type="checkbox" name="interest" value="web-development"> Web Development</label>
+                            <label class="choice"><input type="checkbox" name="interest" value="database"> Database Systems</label>
+                            <label class="choice"><input type="checkbox" name="interest" value="ai"> Artificial Intelligence</label>
+                            <label class="choice"><input type="checkbox" name="interest" value="data-science"> Data Science</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account and additional information</legend>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="password">Create password</label>
+                            <input type="password" id="password" name="password" minlength="8" autocomplete="new-password" required>
+                            <small>Minimum 8 characters for this demonstration.</small>
+                        </div>
+                        <div class="form-field">
+                            <label for="comments">Additional comments</label>
+                            <textarea id="comments" name="comments" rows="4" placeholder="Enter additional information"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-actions">
+                    <button class="button" type="submit">Register student</button>
+                    <button class="button button-secondary" type="reset">Clear form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="content-section" id="feedback">
+            <h2>Website feedback</h2>
+            <p class="section-intro">A second form reinforces form structure and different input controls.</p>
+            <form action="#" method="get" class="form-layout">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="visitor-name">Name</label>
+                        <input type="text" id="visitor-name" name="visitor-name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="visitor-email">Email</label>
+                        <input type="email" id="visitor-email" name="visitor-email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="rating">Rate the website</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">-- Select rating --</option>
+                            <option>Excellent</option><option>Good</option><option>Average</option><option>Poor</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <span class="field-label">Would you recommend this website?</span>
+                        <div class="choice-group">
+                            <label class="choice"><input type="radio" name="recommend" value="yes" required> Yes</label>
+                            <label class="choice"><input type="radio" name="recommend" value="no"> No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="feedback-message">Your feedback</label>
+                    <textarea id="feedback-message" name="feedback-message" rows="4" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button class="button" type="submit">Send feedback</button>
+                    <button class="button button-secondary" type="reset">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="content-section" id="multimedia">
+            <h2>Educational multimedia</h2>
+            <p class="section-intro">Audio and video players are set to fit the width of their responsive cards.</p>
+            <div class="media-grid">
+                <article class="media-card">
+                    <h3>Audio lesson</h3>
+                    <p>Listen to an introductory web development lesson.</p>
+                    <audio controls preload="metadata">
+                        <source src="audio/WhatsApp_audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p class="small-note">Expected file: <code>audio/WhatsApp_audio.mp3</code></p>
+                </article>
+                <article class="media-card">
+                    <h3>Video lesson</h3>
+                    <p>Watch a short demonstration related to the website project.</p>
+                    <video controls preload="metadata" playsinline>
+                        <source src="videos/lesson.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <p class="small-note">Expected file: <code>videos/lesson.mp4</code></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section" id="form-controls">
+            <h2>Form control examples</h2>
+            <p class="section-intro">Use these examples to compare common HTML input types.</p>
+            <div class="control-grid">
+                <div class="form-field"><label for="sample-text">Text input</label><input type="text" id="sample-text" placeholder="Enter text"></div>
+                <div class="form-field"><label for="sample-email">Email input</label><input type="email" id="sample-email" placeholder="name@example.com"></div>
+                <div class="form-field"><label for="sample-tel">Telephone input</label><input type="tel" id="sample-tel" placeholder="0700 000 000"></div>
+                <div class="form-field"><label for="sample-number">Number input</label><input type="number" id="sample-number" min="1" max="100"></div>
+                <div class="form-field"><label for="sample-date">Date input</label><input type="date" id="sample-date"></div>
+                <div class="form-field"><label for="sample-password">Password input</label><input type="password" id="sample-password" minlength="8"></div>
+                <div class="form-field"><label for="sample-course">Selection list</label><select id="sample-course"><option value="">-- Select course --</option><option>Web Development</option><option>Data Mining</option><option>Artificial Intelligence</option></select></div>
+                <div class="form-field"><label for="sample-message">Textarea</label><textarea id="sample-message" rows="3"></textarea></div>
+            </div>
+        </section>
+
+        <section class="content-section" id="responsive-guide">
+            <h2>Week 7: Responsive design notes</h2>
+            <p class="section-intro">The same layout components used in Week 6 are now adapted to different screen sizes.</p>
+            <div class="learning-row">
+                <article class="learning-item">
+                    <h3>Flexible widths</h3>
+                    <p>The main content uses a percentage-based width with a maximum width, preventing it from becoming too wide.</p>
+                </article>
+                <article class="learning-item">
+                    <h3>Media queries</h3>
+                    <p>CSS breakpoints reduce grid columns and stack the main sections on narrower screens.</p>
+                </article>
+                <article class="learning-item">
+                    <h3>Responsive components</h3>
+                    <p>Navigation, course cards, forms, tables and media have specific rules for small viewports.</p>
+                </article>
+            </div>
+            <h3>Responsive layout checklist</h3>
+            <ul class="check-list">
+                <li>Viewport meta tag is present.</li>
+                <li>Course cards change from two columns to one column on smaller screens.</li>
+                <li>Form fields fit the available width.</li>
+                <li>Wide tables can scroll horizontally without stretching the whole page.</li>
+                <li>Audio and video players stay within their cards.</li>
+                <li>Navigation links wrap and remain usable.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>ICT 2102: Web Development</strong></p>
+        <p>Progressive sample portal — HTML, CSS layout, forms, tables, multimedia and responsive design.</p>
+        <a href="#top">Back to top ↑</a>
+    </footer>
+</body>
+</html>
